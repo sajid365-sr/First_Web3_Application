@@ -12,7 +12,6 @@ const NavbarItem = ({ title, classProps }) => {
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  console.log(toggleMenu);
 
   return (
     <nav className="w-full flex md:justify-center justify-between p-4 items-center">
@@ -29,11 +28,11 @@ const Navbar = () => {
       </ul>
       <div className="flex relative">
         {toggleMenu ? (
-        //   <AiOutlineClose
-        //     className="text-white md:hidden cursor-pointer"
-        //     onClick={() => setToggleMenu(false)}
-        //   /> 
-        ""
+          //   <AiOutlineClose
+          //     className="text-white md:hidden cursor-pointer"
+          //     onClick={() => setToggleMenu(false)}
+          //   />
+          ""
         ) : (
           <HiMenuAlt4
             className="text-white md:hidden cursor-pointer"
